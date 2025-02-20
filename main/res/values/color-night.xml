@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blacks">#FF000000</color>
+    <color name="whites">#FFFFFFFF</color>
+    <color name="greys">#766E6E</color>
+    <color name="submit_btn_colors">#FF5722</color>
+</resources>

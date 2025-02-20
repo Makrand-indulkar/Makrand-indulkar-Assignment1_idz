@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">IDZDigital</string>
+    <string name="welcome_user">Welcome User</string>
+    <string name="please_enter_your_details">Please enter your details.</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="name">Name</string>
+    <string name="dd">DD</string>
+    <string name="mm">MM</string>
+    <string name="yyyy">YYYY</string>
+    <string name="birth_date">Birth Date</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="email_id">Email ID</string>
+    <string name="submit">Submit</string>
+    <string name="user_details">User Details</string>
+    <string name="registration_successful">Registration Successful</string>
+</resources>

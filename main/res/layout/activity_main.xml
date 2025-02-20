@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:layout_margin="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/welcomeUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/welcome_user"
+        android:textColor="@color/black"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/please_enter_your_details"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/subtitle_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcomeUser" />
+
+
+    <TextView
+        android:id="@+id/nameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/name"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitle" />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_height"
+        android:layout_marginTop="@dimen/padding"
+        android:autofillHints="Name"
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/enter_your_name"
+        android:inputType="text"
+        android:padding="@dimen/padding"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameTv" />
+
+    <TextView
+        android:id="@+id/BirthDateTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/birth_date"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtName" />
+
+    <EditText
+        android:id="@+id/edtDay"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/edit_text_height"
+        android:layout_marginTop="@dimen/padding"
+        android:autofillHints="Day"
+        android:background="@drawable/dob_edittext_first_bg"
+        android:hint="@string/dd"
+        android:inputType="number"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/BirthDateTv"
+        app:layout_constraintWidth_percent="0.33" />
+
+    <EditText
+        android:id="@+id/edtMonth"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/edit_text_height"
+        android:autofillHints="Month"
+        android:background="@drawable/dob_edittext_mid_bg"
+        android:hint="@string/mm"
+        android:inputType="number"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/edtDay"
+        app:layout_constraintEnd_toStartOf="@id/edtYear"
+        app:layout_constraintStart_toEndOf="@id/edtDay"
+        app:layout_constraintWidth_percent="0.33" />
+
+    <EditText
+        android:id="@+id/edtYear"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/edit_text_height"
+        android:autofillHints="Year"
+        android:background="@drawable/dob_edittext_last_bg"
+        android:hint="@string/yyyy"
+        android:inputType="number"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/edtDay"
+        app:layout_constraintStart_toEndOf="@id/edtMonth"
+        app:layout_constraintWidth_percent="0.33" />
+
+    <TextView
+        android:id="@+id/emailTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/email_id"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtYear" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_height"
+        android:layout_marginTop="@dimen/padding"
+        android:autofillHints="Email"
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/enter_your_email"
+        android:inputType="textEmailAddress"
+        android:padding="@dimen/padding"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailTv" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_text_height"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/submit_btn_bg"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtEmail" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
